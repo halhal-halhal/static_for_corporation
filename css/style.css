@@ -7,6 +7,7 @@ body{
 |       header-menu       |
 --------------------------*/
 header{
+  z-index: 90;
   width: 100%;
   position: fixed;
 }
@@ -28,21 +29,134 @@ ul.navbar-nav li:hover{
   background-color: #343134 !important;
   min-height: 80px !important;
 }
+
 /*------------------------
 |       top-image        |
 --------------------------*/
+#top-image{
+  text-align: center;
+}
+#top-image img{
+  width: 100%;
+}
 
 /*------------------------
-|                         |
+|       page-menu         |
 --------------------------*/
+#page-menu{
+  text-align: center;
+  margin-bottom: 5em;
+  width: 100%;
+}
+#page-menu .page-info{
+  font-size: 150%;
+  padding: 0 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+#page-menu a{
+  margin: 1em 0;
+  padding: 1em 2em;
+  background-color: #FF7D00;
+  color: white;
+  font-size: 150%;
+}
+#page-menu h2{
+  padding: 0.5em;
+  font-size: 300%;
+}
+#page-menu img{
+  width: 100%;
+  padding: 1em;
+}
+@media screen and (max-width: 992px){
+  #page-menu .page-info{
+    font-size: 150%;
+    padding: 0 1em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 640px){
+  #page-menu .page-info{
+    font-size: 120%;
+  }
+  #page-menu h2{
+    font-size: 200%;
+  }
+}
+.pege-menu-element-1{
+    padding: 2em 10%;
+  background-color: white;
+}
+.pege-menu-element-2{
+    padding: 2em 10%;
+    background-color: #ECEECF;
+}
 
 /*------------------------
-|                         |
+|          news           |
 --------------------------*/
+#news{
+  padding: 1em 2em;
+  margin: auto;
+  margin-top: 5em;
+  background-color: #ECEECF;
+  width: 90%;
+}
+#news h2{
+  padding-left: 1em;
+  padding-bottom: 1em;
+  font-size: 250%;
+}
+#news ul{
+  font-size: 125%;
+  padding-left: 0;
+}
+#news li{
+  list-style-type: none;
+  padding: 0 1em;
+}
+#news div{
+  text-align: center;
+  color: white;
+  padding: 0.5em 1em;
+}
+#news div.news-title{
+  text-align: left;
+  margin: 0.25em 0;
+  padding: .75em 0;
+  padding-left: 1em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#news div.icon-training {
+  background-color: red;
+  }
+#news div.icon-blog{
+  background-color: green;
+}
 
 /*------------------------
-|                         |
+|        contact         |
 --------------------------*/
+#contact{
+  text-align: center;
+  padding: 6em 0;
+  font-size: 150%;
+}
+#contact h2{
+  font-weight: bolder;
+}
+#contact a{
+  padding: 1em 3em;
+  background-color: #1B284E;
+  color: white;
+  font-size: 125%;
+}
+#contact p{
+  margin-bottom: 3em;
+}
 
 /*------------------------
 |                         |
